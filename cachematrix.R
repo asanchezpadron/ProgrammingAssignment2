@@ -37,5 +37,6 @@ cacheSolve <- function(x, ...) {
       ## If inverso value was NULL then recalculate the matrix inverse value.
       matriz <- x$get()
       inverso <- solve(matriz, ...)
+      x$set_inverso(inverso)
       inverso
 }
